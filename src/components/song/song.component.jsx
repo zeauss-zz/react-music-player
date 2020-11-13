@@ -1,0 +1,11 @@
+import './song.styles.scss'
+
+const Song = ({currentSong}) => (
+    <div className="song-container">
+        <img src={currentSong.cover} alt="cover" />
+        <h2>{currentSong.name}</h2>
+        <h3>{currentSong.artist}</h3>
+    </div>
+)
+
+export default Song;
