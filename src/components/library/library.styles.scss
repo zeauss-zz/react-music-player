@@ -5,8 +5,11 @@
     width: 20rem;
     height: 100%;
     box-shadow:  2px 2px 50px rgb(204,204,204);
+    background: white;
     overflow-y: auto;
-
+    transform: translateX(-100%);
+    transition: all .5s ease;
+    opacity: 0;
     h2 {
         padding: 2rem;
     }
@@ -17,6 +20,7 @@
     align-items: center;
     padding: 1rem 2rem;
     cursor: pointer;
+    transition: background .5s ease;
 
     img {
         width: 30%;
@@ -38,3 +42,18 @@
         font-size: .7rem;
     }
 }
+
+.selected {
+    background: rgb(165,181,228);
+}
+
+.active-library {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+   .library {
+       width: 100%;
+   }
+ }
